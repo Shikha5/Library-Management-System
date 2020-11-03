@@ -111,7 +111,7 @@ void visitor::add_member()
 
 void visitor :: struct v_node *srch1(){
     int mno;
-            cout<<"enter book id to be deleted ";
+            cout<<"enter member id to be deleted ";
             cin>>mno;
  struct v_node *temp =head;
     while (temp != NULL)
