@@ -13,7 +13,7 @@ struct b_node
     int total_qty;
     int qty_left;
 
-    node * next;
+    b_node * next;
 };
 class book
 {
@@ -24,13 +24,13 @@ class book
             head=NULL;
         }
 
-        void * add_book();
-        void * update_b_details();
-        void * remove_book();
-        //void * recommend_book(head);
+        void add_book();
+        void update_b_details();
+        void remove_book();
+        //void  recommend_book(head);
 };
 
-void b_node::add_book()
+void book::add_book()
 {
     //Sakshi or Shikha
 }
@@ -52,7 +52,7 @@ struct v_node
     double money_due;
     char m_b_id[5];//id of book issued to member, only one book can be issued at a time
 
-    node * next;
+    v_node * next;
 };
 
 class visitor
@@ -64,17 +64,17 @@ class visitor
             head=NULL;
         }
 
-        void * add_member();
-        void * remove_member();
-        void * add_details();
-        void * remove_details();
-        void * update_details();
+        void add_member();
+        void remove_member();
+        void add_details();
+        void remove_details();
+        void update_details();
         //Issue
         //Re-issue
         //Return
 };
 
-void v_node::add_member()
+void visitor::add_member()
 {
     //Sakshi or Shikha
 }
