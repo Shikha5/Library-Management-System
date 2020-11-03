@@ -15,6 +15,8 @@ struct b_node
 
     b_node * next;
 };
+
+
 class book
 {
     b_node * head;
@@ -27,8 +29,18 @@ class book
         void add_book();
         void update_b_details();
         void remove_book();
+      void srch();
+
+
+
+
+
+
+
         //void  recommend_book(head);
 };
+
+
 
 void book::add_book()
 {
@@ -39,6 +51,23 @@ void book::remove_book()
 {
     //Rakshanda
 }
+
+void book :: struct b_node *srch(){
+    int bid;
+            cout<<"enter book id to be deleted ";
+            cin>>bid;
+ struct b_node *temp =head;
+    while (temp != NULL)
+    {
+        if ( temp-> b_id == bid)
+        {
+            return temp;
+        }
+        temp = temp->next;
+    }
+    return NULL;
+}
+
 
 struct v_node
 {
@@ -69,6 +98,7 @@ class visitor
         void add_details();
         void remove_details();
         void update_details();
+        void srch1();
         //Issue
         //Re-issue
         //Return
@@ -79,6 +109,21 @@ void visitor::add_member()
     //Sakshi or Shikha
 }
 
+void visitor :: struct v_node *srch1(){
+    int bid;
+            cout<<"enter book id to be deleted ";
+            cin>>bid;
+ struct v_node *temp =head;
+    while (temp != NULL)
+    {
+        if ( temp-> b_id == bid)
+        {
+            return temp;
+        }
+        temp = temp->next;
+    }
+    return NULL;
+}
 
 int main()
 {
