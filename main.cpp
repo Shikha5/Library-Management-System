@@ -110,13 +110,13 @@ void visitor::add_member()
 }
 
 void visitor :: struct v_node *srch1(){
-    int bid;
+    int mno;
             cout<<"enter book id to be deleted ";
-            cin>>bid;
+            cin>>mno;
  struct v_node *temp =head;
     while (temp != NULL)
     {
-        if ( temp-> b_id == bid)
+        if ( temp-> mem_no == mno)
         {
             return temp;
         }
