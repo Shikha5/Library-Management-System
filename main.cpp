@@ -56,7 +56,8 @@ newnode= (struct b_node *)malloc(sizeof(struct b_node))
 newnode->next=null;
 
 if(head==null)
-{head=temp=newnode;}
+{head=newnode;
+temp=newnode;}
 else
 {temp->next=newnode;
 temp=newnode;}
