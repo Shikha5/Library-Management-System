@@ -35,7 +35,7 @@ void book::add_book()
     //Sakshi or Shikha
 }
 
-void b_node::remove_book()
+void book::remove_book()
 {
     //Rakshanda
 }
