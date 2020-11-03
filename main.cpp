@@ -24,15 +24,20 @@ class book
             head=NULL;
         }
 
-        b_node * add_book();
-        b_node * update_b_details();
-        b_node * remove_book();
-        //b_node * recommend_book(head);
+        void * add_book();
+        void * update_b_details();
+        void * remove_book();
+        //void * recommend_book(head);
 };
 
 void b_node::add_book()
 {
     //Sakshi or Shikha
+}
+
+void b_node::remove_book()
+{
+    //Rakshanda
 }
 
 struct v_node
@@ -59,11 +64,11 @@ class visitor
             head=NULL;
         }
 
-        v_node * add_member();
-        v_node * remove_member();
-        v_node * add_details();
-        v_node * remove_details();
-        v_node * update_details();
+        void * add_member();
+        void * remove_member();
+        void * add_details();
+        void * remove_details();
+        void * update_details();
         //Issue
         //Re-issue
         //Return
