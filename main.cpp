@@ -47,6 +47,15 @@ void book::add_book()
     //Sakshi or Shikha
 }
 
+void book :: reissue()     //initialize times  **************************************
+{
+if(times<3)
+     times++;
+else
+     cout<<"Book cannot be reissued!"; 
+}
+
+
 void book::remove_book()
 {
     //Rakshanda
