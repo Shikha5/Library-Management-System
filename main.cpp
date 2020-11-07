@@ -12,6 +12,7 @@ struct b_node
     int edition;
     int total_qty;
     int qty_left;
+    int times;
 
     b_node * next;
 };
